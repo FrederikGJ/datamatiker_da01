@@ -1,6 +1,6 @@
-int input = -20;
+int input = 20;
 
-for ( int i = input; i <= 0; i++) {
+for ( int i = input; i >= 0; i--) {
 
   println(i);
 
