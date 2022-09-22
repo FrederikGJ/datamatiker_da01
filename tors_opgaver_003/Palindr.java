@@ -1,5 +1,3 @@
-//still not working 
-
 import java.lang.*;
 import java.io.*;
 import java.util.*;
@@ -29,12 +27,20 @@ class Palindr
         input1.reverse();
 
         // print reversed String
-        System.out.println(input1);
+        
+        String input2 = input1.toString();
+
+        boolean sameWord = str.equals(input2);
+
+        if(sameWord == true)
+        {
+        	System.out.println(input1);
+
+        }
+      	
 
 
-
-
-        //if (str.equals(input1)){}
+        
        
 
 	}
