@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/object-diagram
+!pragma layout smetana
+
+abstract class Main
+abstract class Driver
+abstract class Car
+
+
+Main : + static void main()
+Main : + static Driver driver01
+Main : + static Car car01
+Main : + static Car car02
+
+Driver : + Driver ()
+Driver : + String toString ()
+Driver : - String name
+Driver : - String age
+
+Car : - String make
+Car : - String model
+Car : - int year
+Car : + String driver
+Car : + void setDriver()
+Car : + String toString()
+
+Main *-- Car
+Main *-- Driver
+
+
+
+@enduml
