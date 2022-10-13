@@ -1,0 +1,32 @@
+@startuml
+!pragma layout smetana
+
+(*)  --> "Land on Plot"
+
+If "Does player owns the property?" then
+    --> [no] "Do you have the money to pay rent?"
+    If "Accept?"
+    --> [yes] "you pay the rent"
+    else
+    --> [no] "you are out og the game"
+    Endif
+
+
+
+
+
+
+else
+    --> [yes] "Do you have monopoly?"
+
+    If "Do player want to build?" then
+    --> [yes] "OPTION: Do you want to build?"
+
+    If "Accept?" then
+    --> [yes] "Build something"
+    else
+    --> [No] "Do nothing"
+    Endif
+
+
+@enduml
